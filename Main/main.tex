@@ -1,0 +1,282 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Debut d'importation de tous les paquets nécéssaire.
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[french,english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{listingsutf8}
+\usepackage{texments}
+\usepackage{layout}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{enumitem} %package permettant de géner le changement des enumeration
+\usepackage{setspace}%package permettant de gérer les interlines entres les phrases.
+\usepackage{lscape}%c'est un packet qui permet de gérer l'orientation des pages.
+\usepackage{lastpage}%est un paquet permettant de ressortir le numero de la fin de notre page
+\usepackage{amsmath,amsfonts}
+%chargement du package fancy propre aux entête et au pieds de pag
+\usepackage{fancyhdr}
+\parindent=0cm
+%\usepackage{array}%c'est un packet permettant d'insérer un tableau dans un document latex
+\usepackage{setspace}%commande permettant de gérer les interlines 
+\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry} 
+\usepackage{lastpage}
+\usepackage{tikz}%package permettant d'avoir la bordure de la prémiere de couverture
+\usetikzlibrary{calc}%package pour la bordure de couverture
+\newlength{\drop}
+%Chargment de packages pour plusieurs types de letrines
+\usepackage{lettrine,oldgerm,yfonts}
+\usepackage{lipsum}
+%fin d'importation des paquets
+%doublespacing
+%\onehalfspacing
+%\setstretch{1.5}
+%\renewcommand{\baselinestretch}{1.5} a placer avant le \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%bloc de commande permettant de définir l'entête et le pied de page:
+\lhead{}
+\chead{\small{PRESENTATION DES 10 NORMES SUR LES CARTES A PUCE}}
+\rhead{}
+
+%bloc de commande permettant de définir le pied de page:
+\lfoot{\small{Oumar Djimé RATOU}}
+\cfoot{}
+\rfoot{\thepage /\pageref{LastPage}}%commande permettant de reférencé le nombre total de page
+
+%definissons la largeur de la ligne horizontale a l'entête de la page
+\renewcommand{\headrulewidth}{2pt}
+%definissons la largeur de la ligne horizontale a l'entête de la page
+\renewcommand{\footrulewidth}{2pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%\renewcommand{\thepart}{\Roman{part}}
+%.\arabic{subsection}.\roman{subsubsection}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%présentation de la prémière de couverture
+\begin{document}
+%\maketitle
+
+%\selectlanguage{french}
+\begin{tikzpicture}[remember picture, overlay]
+	\draw[line width = 2pt] ($(current page.north west) + (1.75cm,-1.75cm)$) rectangle ($(current page.south east) + (-1.75cm,1.75cm)$);
+\end{tikzpicture}
+\thispagestyle{empty}
+\pagenumbering{roman}
+%\selectlanguage{francais}
+%nous activons la numerotation roman
+%debut page de garde
+\begin{minipage}[c]{.35\textwidth}
+%	\center
+    \footnotesize
+    \begin{center}
+    République du Cameroun\\
+	****\\
+	Paix-Travail-Patrie\\
+	****\\
+	Ministère de l’Enseignement Supérieur\\
+	****\\
+	Université de Maroua\\
+	****\\
+	Ecole Nationale Supérieure Polytechnique de Maroua\\
+    \end{center}
+\end{minipage}
+\begin{minipage}[c]{.3\textwidth}
+	\begin{center}
+		\includegraphics[scale=0.4]{univ.png}
+	\end{center}
+\end{minipage}
+\begin{minipage}[c]{.35\textwidth}
+%    \center
+    \footnotesize
+    \begin{center}
+    Republic of Cameroon\\
+	****\\
+	Peace-Work-Fatherland\\
+	****\\
+	Ministry of Higher Education\\
+	****\\
+	The University of Maroua\\
+	****\\
+	The Polytechnic National Advanced School of Maroua\\
+    \end{center}
+\end{minipage}
+%fin page de garde
+%titre du thème
+\begin{center}
+	\drop=0.07\textheight %commande permettant de gerer la l'espace entre deux texte
+	\vspace{0.5\drop}
+	INFORMATIQUE ET TELECOMMUNICATIONS\\
+	\drop=0.07\textheight 
+	\vspace{0.4\drop}
+	\textbf{CRYPTOGRAPHIE ET SÉCURITÉ INFORMATIQUE}
+	\rule{.95\textwidth}{2pt}\\
+	\large{\textbf{PRESENTATION DES 10 NORMES SUR LES CARTES A PUCE}}\\
+	\rule{.95\textwidth}{2pt}\\%commande permettant de désigné un trait horizontal de longueur .95 et de 			largeur 2pt
+
+\end{center}
+
+
+\begin{center}
+	%\drop=0.07\textheight %commande permettant de gerer la l'espace entre deux texte
+	%\vspace{0.2cm}
+	\textbf{Mémoire présenté et soutenu en vue de l’obtention du Diplôme}\\
+	\vspace{0.2cm}
+	\textbf{D’INGÉNIEUR DE CONCEPTION EN CRYPTOGRAPHIE ET SÉCURITÉ INFORMATIQUE}\\
+	\vspace{0.2cm}
+	Par \\
+	\vspace{0.2cm}
+	\textbf{OUMAR DJIMÉ RATOU}\\
+	\vspace{0.2cm}
+	\textbf{Matricule : 17Y402P}\\
+	\vspace{0.3cm}
+	Sous la Direction de : \\
+	\vspace{0.2cm}
+	\textbf{Dr. KALADZAVI GUIDEDI}\\
+	\vspace{0.2cm}
+	Chargé de Cours
+	
+	
+
+\end{center}
+
+
+	
+\drop=0.8\textheight%commande nous permettant de définir la l'espace entre deux paragraphes
+\vspace{0.1\drop}%commande nous permettant de définir la l'espace entre deux paragraphes
+\begin{center}
+	
+	
+	Devant le jury composé de :\\
+	\vspace{0.2cm}
+	\emph{\textbf{Président : }}  \textit{M. LAOUKOURA Charles}\\
+	\emph{\textbf{Rapporteur : }}  \textit{M. LAOUKOURA Charles}\\
+	\emph{\textbf{Examinateur : }}  \textit{M. LAOUKOURA Charles}\\
+	
+	\drop=0.2\textheight%commande nous permettant de définir la l'espace entre deux paragraphes
+	\vspace{0.5\drop}
+	\textit{ANNÉE ACADÉMIQUE:} \textbf{2018/2019}
+\end{center}
+%\end{center}
+%fin de la préssentation
+%fin de présentation de la prémière de couverture
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%debut du rapport
+\onehalfspacing
+\newpage
+
+\setcounter{page}{1}
+
+\newpage
+
+%PArtie de dédicace
+\section*{Dédicaces}
+
+\pagebreak
+
+%Partie de rémerciement
+\section*{Remerciement}
+
+\pagebreak
+
+%Abstract francais
+\selectlanguage{french}
+%\renewcommand{\contentsname}{Sommaire} : commande permettant de remplacer table des matière en sommaire
+%%%%%%%%%%%%%%%%%%%%
+\tableofcontents   %
+%%%%%%%%%%%%%%%%%%%%
+
+
+
+\pagebreak
+%Listees des abréviations
+\section*{Listes des abréviations}
+
+\pagebreak
+%Résumé et abstract
+
+
+%\setlength{\parindent}{0pt} %Supprime l'indentation de tous le document
+\begin{abstract}
+	\lipsum[2]
+\end{abstract}
+%Abstract anglais
+\selectlanguage{english}
+\begin{abstract}
+	\lipsum[2]
+\end{abstract}
+
+%On repasse en francais pour la suite de texte
+\selectlanguage{french}
+
+% Mot clés
+\section*{Keyswords ou mot clé}
+
+\pagebreak
+% Listes de tableau
+\section*{Liste des tableaux}
+
+\pagebreak
+
+% Listes de figures et illustration
+\section*{Listes de figures et illustration}
+
+%\pagenumbering{roman}
+\newpage 	
+\pagenumbering{arabic}		
+\pagestyle{fancy}
+%corps du rapport
+%\begin{flushleft}
+
+
+\newpage
+%Introduction général
+\addcontentsline{toc}{section}{Introduction}
+\section*{Introduction}
+\newpage
+
+%Premier partie
+\part{Présentation générale}
+
+
+% Chapitre 1 contexte et problematique
+%\include{../Chapitre1/chapiter1}
+\input{../Chapitre1/chapiter1}
+
+% Chapitre 2 
+\input{../Chapitre2/chapitre2}
+
+
+%Premier partie
+\part{Conception et test}
+
+%Chapitre 3
+\input{../Chapitre3/chapitre3}
+
+
+%Chapitre 3
+\input{../Chapitre4/chapitre4}
+
+
+
+\newpage
+\addcontentsline{toc}{section}{Conclusion}
+\section*{Conclusion}
+%\end{flushleft}
+\newpage
+%\textbf{Ouvrages}
+%\bibliographystyle{plain}
+%\bibliography{biblnormecarte}
+%\addcontentsline{toc}{section}{Référence Bibliographie}
+
+			
+\end{document}

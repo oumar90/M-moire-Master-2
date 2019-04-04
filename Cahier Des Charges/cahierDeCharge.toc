@@ -1,0 +1,12 @@
+\babel@toc {french}{}
+\contentsline {section}{\numberline {1}Description et compr\IeC {\'e}hension du projet}{3}
+\contentsline {section}{\numberline {2}\IeC {\'E}tude de la faisabilit\IeC {\'e} technique}{3}
+\contentsline {subsection}{\numberline {2.1}Contexte et probl\IeC {\'e}matique}{3}
+\contentsline {subsection}{\numberline {2.2}Objectifs}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Objectif global}{3}
+\contentsline {subsubsection}{\numberline {2.2.2}Objectif sp\IeC {\'e}cifique}{3}
+\contentsline {section}{\numberline {3}Description des besoins}{3}
+\contentsline {subsection}{\numberline {3.1}Sp\IeC {\'e}cifications fonctionnelles}{3}
+\contentsline {subsection}{\numberline {3.2}Sp\IeC {\'e}cifications non-fonctionnelles}{3}
+\contentsline {section}{\numberline {4}Enveloppe budg\IeC {\'e}taire}{3}
+\contentsline {section}{\numberline {5}D\IeC {\'e}lai}{3}
