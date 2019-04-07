@@ -7,13 +7,20 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\author{Oumar Djimé Ratou}
+\usepackage[hidelinks]{hyperref}
 
-\title{Cahier de charge}
-\title{Développement d'un module de signature électronique et de PKI}
-\author{Oumar Djimé Ratou}
 
 \begin{document}
+
+\title{
+	{\textbf{{\Huge CAHIER DE CHARGE}}}\\
+	\vspace*{2cm}
+	{Développement d'un module de signature électronique (PKI)}
+}
+
+%\vspace*{3cm}
+\author{Oumar Djimé Ratou}
+
 \maketitle
 
 
@@ -21,27 +28,89 @@
 \tableofcontents
 \newpage
 
-
-
-
+%\begin{flushleft}
 
 \section{Description et compréhension du projet}
-Le module de signature électronique et de PKI(Public Key Infrastructure) ou infrastructure à clé publique est une service permettant de créer des signatures numériques et des infrastructures à clé publique qui permettra à d'autre développeurs d'intégré facilement dans leurs plate-forme de même technologie afin que les utilisateurs finaux puissent l'utiliser aisément.
+
+	Le projet soumis à mon analyse consiste à mettre sur pied un module de signature électronique basant sur  l'infrastructure à clés publique(ICP) ou la Public key infrastructure (PKI). Il va consister  dans un premier temps :
+	\begin{itemize}
+		\item générer la paire de clés (publiques et privées),
+		\item créer le certificat.
+\end{itemize}		
+	   et ensuite :
+	\begin{itemize}
+	\item calculer une valeur de hachage du document(empreinte numérique),
+	\item chiffrer l'empreinte générée avec la clé publique,
+	\item créer la signature avec la clé privée,
+	\item vérifier la signature avec la clé publique.
+\end{itemize}		   
+	
+	 Ainsi le module permettra à d'autres développeurs d'intégrer facilement dans leur plate-forme de même technologie afin que les utilisateurs finaux puissent l'utiliser aisément.
 
 \section{Étude de la faisabilité technique}
-	\subsection{Contexte et problématique}
+	\subsection{Contexte et problématique} 
+	
+		La création des signatures électronique basant sur les infrastructures à clé publiques que sa soit avec OpenSSL ou d'autres se font soit en console, soit d'utiliser des outils propriétaire (Word, Adobe Reader, DocuSign, Eversign, Yousign etc.), soit d'aller chez une Autorité de Certification (AC), qui sont complexes et coûteux pour les utilisateurs et surtout à ceux qui débutent en développement des applications et en sécurité informatique. Et encore malheureusement ils sont déjà intégrés dans leurs applications complètes, donc pas des moyens de les réutiliser dans  d'autres logiciels comme des modules.\\
+		
+		Les problèmes qui surviennent souvent dans les entreprises en particulier et chez les développeurs en général c'est la disposition des programmes modulaires pour intégrer facilement dans leurs plates-formes en fin de gagner en temps et en l'argent (surtout pour les entreprises). Ces nécessités nous amènent à nous poser les questions suivantes:
+		
+	\begin{itemize}
+		\item Comment peut-on rendre cette difficulté de signer un document de manière transparente?
+		\item Comment faciliter le développement d'un outil informatique au sein de l'entreprise ?
+	\end{itemize}
+	
 	\subsection{Objectifs}
-	\subsubsection{Objectif global}
-	\subsubsection{Objectif spécifique}
-
+		\subsubsection{Objectif global}
+			Il sera question pour moi de développer un module des gestions des signatures basant les infrastructures à clé publique.
+		\subsubsection{Objectif spécifique}
+			De façon spécifique, il sera question pour moi de gérer les problèmes spécifiques liés aux :
+			\begin{itemize}
+				\item Création d'une signature d'un document numérique (texte, son, vidéo, PDF, etc.) en se basant sur les infrastructures à clé publique ou PKI,
+				\item automatisation de la création des la signature à la main et autres,
+				\item vérification de la signature de document numérique,
+				\item prouver l'authenticité d'un signataire,
+				\item faciliter à l'entreprise lors d'un besoin d'un module de signature électronique,
+				\item rendre la vie facile au développeur qui ne maîtrise pas forcément  la notion de cryptographie qui se cache derrière la signature numérique, d'intégrer ce module dans sa plate-forme.
+				%\item 
+			\end{itemize}
+			
+	%\newpage
+	
+	%\begin{minipage}{\textwidth}
+		\subsubsection*{Environnement}
+		
+		 
+		    L’environnement dans lequel nous nous trouvons est favorable au projet puisqu’un
+tel système existe certes mais sous une licence payante non modulable. Sa mise en œuvre sera une innovation importante dans l’évolution numérique au sein de l'entreprise.
+	%\end{minipage}
 
 \section{Description des besoins}
-	\subsection{Spécifications fonctionnelles}
-	\subsection{Spécifications non-fonctionnelles}
 
-\section{Enveloppe budgétaire}
+	\subsection{Spécifications fonctionnelles}
+	
+	Notre module des signatures électronique aura comme spécification fonctionnelle :
+	
+	\begin{itemize}
+		\item générer des paires de clés(publique et privée),
+		\item signer un document numérique à l'aide de la clé privée,
+		\item vérifier la signature d'un document numérique à l'aide de la clé publique,
+		\item chiffrer/déchiffrer un document,
+		\item générer un hash d'un document.
+	\end{itemize}
+		
+	\subsection{Spécifications non-fonctionnelles}
+	Comme spécification non-fonctionnelle, nous aurons :
+	\begin{itemize}
+		\item authentification : le fait de s'assurer que l'expéditeur est bien celui qu'il prétend être,
+		\item intégrité : le fait de s'assurer que l'information ne subisse aucune altération ou destruction volontaire ou accidentelle, et conserve le format initial,
+		\item le module doit être ergonomique,
+		\item fonctionne 24 heure sur 24, 7 jours sur 7.
+	\end{itemize}
+
+%\section{Enveloppe budgétaire}
 
 \section{Délai}
+	J'estime que ce module pourra me prendre 1 à 2 mois.
 
-
+%\end{flushleft}
 \end{document}
