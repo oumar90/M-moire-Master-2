@@ -1,0 +1,6 @@
+# Les fichiers ignorer
+* .aux
+* .log
+* .out
+* .gz
+* .toc
