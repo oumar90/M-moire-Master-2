@@ -2,10 +2,11 @@
 \contentsline {section}{\numberline {1}Description et compr\IeC {\'e}hension du projet}{3}{section.1}
 \contentsline {section}{\numberline {2}\IeC {\'E}tude de la faisabilit\IeC {\'e} technique}{3}{section.2}
 \contentsline {subsection}{\numberline {2.1}Contexte et probl\IeC {\'e}matique}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Objectifs}{3}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Objectif global}{3}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Objectif sp\IeC {\'e}cifique}{3}{subsubsection.2.2.2}
-\contentsline {section}{\numberline {3}Description des besoins}{4}{section.3}
-\contentsline {subsection}{\numberline {3.1}Sp\IeC {\'e}cifications fonctionnelles}{4}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Sp\IeC {\'e}cifications non-fonctionnelles}{4}{subsection.3.2}
-\contentsline {section}{\numberline {4}D\IeC {\'e}lai}{4}{section.4}
+\contentsline {subsection}{\numberline {2.2}Objectifs}{4}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Objectif global}{4}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Objectif sp\IeC {\'e}cifique}{4}{subsubsection.2.2.2}
+\contentsline {section}{\numberline {3}Description des besoins}{5}{section.3}
+\contentsline {subsection}{\numberline {3.1}Sp\IeC {\'e}cifications fonctionnelles}{5}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Sp\IeC {\'e}cifications non-fonctionnelles}{6}{subsection.3.2}
+\contentsline {section}{\numberline {4}Enveloppe budg\IeC {\'e}taire}{6}{section.4}
+\contentsline {section}{\numberline {5}D\IeC {\'e}lai}{6}{section.5}

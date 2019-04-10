@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.1)  7 APR 2019 08:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.1)  8 APR 2019 15:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1087,27 +1087,27 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 62.
-LaTeX Font Info:    ... okay on input line 62.
-LaTeX Info: Redefining \degres on input line 62.
-LaTeX Info: Redefining \dots on input line 62.
-LaTeX Info: Redefining \up on input line 62.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for LY/yfrak/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for LYG/ygoth/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Info: Redefining \degres on input line 63.
+LaTeX Info: Redefining \dots on input line 63.
+LaTeX Info: Redefining \up on input line 63.
 \c@lstlisting=\count190
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1141,7 +1141,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 62.
+Package hyperref Info: Link coloring OFF on input line 63.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1151,9 +1151,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count197
 )
-LaTeX Info: Redefining \ref on input line 62.
-LaTeX Info: Redefining \pageref on input line 62.
-LaTeX Info: Redefining \nameref on input line 62.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
 
 (./main.out) (./main.out)
 \@outlinefile=\write6
@@ -1161,7 +1161,7 @@ LaTeX Info: Redefining \nameref on input line 62.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 62.
+(lastpage)             ! on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1198,34 +1198,34 @@ Package lastpage Info: Please have a look at the pageslts package at
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-LaTeX Font Info:    Try loading font information for U+msa on input line 88.
+LaTeX Font Info:    Try loading font information for U+msa on input line 89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 88.
+LaTeX Font Info:    Try loading font information for U+msb on input line 89.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<univ.png, id=91, 242.9075pt x 348.30125pt>
-File: univ.png Graphic file (type png)
-<use univ.png>
-Package pdftex.def Info: univ.png  used on input line 91.
+<../imgs/univ.png, id=75, 242.9075pt x 348.30125pt>
+File: ../imgs/univ.png Graphic file (type png)
+<use ../imgs/univ.png>
+Package pdftex.def Info: ../imgs/univ.png  used on input line 92.
 (pdftex.def)             Requested size: 97.16127pt x 139.31802pt.
 
-Overfull \hbox (13.05894pt too wide) in paragraph at lines 68--111
+Overfull \hbox (13.05894pt too wide) in paragraph at lines 69--112
 [][]   $[]$ $[]$ $[]$ 
  []
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./univ.png>]pdfTeX warning
- (ext4): destination with the same identifier (name{page.i}) has been already u
-sed, duplicate ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../imgs/univ.png>]pdfTeX w
+arning (ext4): destination with the same identifier (name{page.i}) has been alr
+eady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 
+l.186 
        [1] [2] (./main.toc)
 \tf@toc=\write7
 \openout7 = `main.toc'.
@@ -1236,27 +1236,27 @@ l.185
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211 \end{abstract}
+l.212 \end{abstract}
                      [1]pdfTeX warning (ext4): destination with the same identi
 fier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.216 \end{abstract}
+l.217 \end{abstract}
                      [1]pdfTeX warning (ext4): destination with the same identi
 fier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.226 \section
+l.227 \section
               *{Liste des tableaux} [1]pdfTeX warning (ext4): destination with 
 the same identifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.229 
+l.230 
        [2]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.iii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.234 \newpage
+l.235 \newpage
                [3]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1280,59 +1280,80 @@ LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <24.29182> not available
 LaTeX Font Warning: Font shape `T1/cmr/m/n' in size <34.44319> not available
 (Font)              size <35.83> substituted on input line 5.
 
-) (../Chapitre2/chapitre2.tex [3
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 24.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+ [3
 
 ] [4]
-Chapitre 2.
-) [5
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
-] [6
+ []
 
-] (../Chapitre3/chapitre3.tex
-Chapitre 3.
-) (../Chapitre4/chapitre4.tex [7
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
 
-]
-Chapitre 4.
-) [8
+ []
 
-] [9] 
+<../imgs/cartemap.png, id=191, 1491.5725pt x 857.2025pt>
+File: ../imgs/cartemap.png Graphic file (type png)
+<use ../imgs/cartemap.png>
+Package pdftex.def Info: ../imgs/cartemap.png  used on input line 104.
+(pdftex.def)             Requested size: 447.4752pt x 257.16273pt.
+
+Overfull \hbox (20.68385pt too wide) in paragraph at lines 104--105
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [6] [7 <../imgs/cartemap.png>] 
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 282.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 282.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
 (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 282.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 282.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D3C21D546884679B2BB8D685BE21EFB0;1398.
+(rerunfilecheck)             Checksum: A08AA0ADB89B66E9782722673D15F666;1106.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.38681pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 282.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
  ) 
 Here is how much of TeX's memory you used:
- 20729 strings out of 492982
- 366780 string characters out of 6134896
- 548086 words of memory out of 5000000
- 23817 multiletter control sequences out of 15000+600000
- 18818 words of font info for 46 fonts, out of 8000000 for 9000
+ 20768 strings out of 492982
+ 367319 string characters out of 6134896
+ 549163 words of memory out of 5000000
+ 23857 multiletter control sequences out of 15000+600000
+ 22049 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,54p,444b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
-fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfrm3583.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (19 pages, 338981 bytes).
+ 55i,11n,54p,590b,491s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+st, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+rm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfrm3583.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (17 pages, 510508 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 234 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

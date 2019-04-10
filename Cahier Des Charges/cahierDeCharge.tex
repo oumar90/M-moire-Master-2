@@ -19,7 +19,7 @@
 }
 
 %\vspace*{3cm}
-\author{Oumar Djimé Ratou}
+\author{Oumar Djimé RATOU}
 
 \maketitle
 
@@ -32,82 +32,148 @@
 
 \section{Description et compréhension du projet}
 
-	Le projet soumis à mon analyse consiste à mettre sur pied un module de signature électronique basant sur  l'infrastructure à clés publique(ICP) ou la Public key infrastructure (PKI). Il va consister  dans un premier temps :
+	Le projet soumis à mon analyse consiste à mettre sur pied un module de signature électronique (dite \textbf{numérique} est un moyen permettant d'identifier son propriétaire et garantir l'authenticité et l'intégrité du contenu)  basant sur  l'infrastructure à clés publique(ICP) ou la Public key infrastructure (PKI). Il va consister  dans un premier temps :\\
 	\begin{itemize}
-		\item générer la paire de clés (publiques et privées),
-		\item créer le certificat.
+		\item générer la paire de clés (publiques et privées):
+		\item générer un certificat auto-signé.\\
 \end{itemize}		
-	   et ensuite :
+	   Et ensuite :\\
 	\begin{itemize}
 	\item calculer une valeur de hachage du document(empreinte numérique),
-	\item chiffrer l'empreinte générée avec la clé publique,
-	\item créer la signature avec la clé privée,
-	\item vérifier la signature avec la clé publique.
+	\item chiffrer l'empreinte générée avec la clé privée,
+	\item associer l'empreinte au document,
+	\item vérifier la signature avec la clé publique.\\
 \end{itemize}		   
 	
-	 Ainsi le module permettra à d'autres développeurs d'intégrer facilement dans leur plate-forme de même technologie afin que les utilisateurs finaux puissent l'utiliser aisément.
+	 Ainsi le module permettra à d'autres développeurs d'intégrer facilement dans leur plate-forme de même technologie afin que les utilisateurs finaux puissent l'utiliser aisément.\\
+	 
+	 Ou encore on peut facilement l'importer dans un programme quelconque de même technologie (langage de programmation) et utiliser les fonctionnalités, à l'exemple du module \textbf{math} sous python : on fait juste \textbf{import math} pour utilisé tous les fonctionnalités de la bibliothèque \textbf{math} ou on fait \textbf{from math import sqrt } pour importer seulement la fonction racine carré. Notre module comportera exactement de la même façon.
 
 \section{Étude de la faisabilité technique}
 	\subsection{Contexte et problématique} 
 	
-		La création des signatures électronique basant sur les infrastructures à clé publiques que sa soit avec OpenSSL ou d'autres se font soit en console, soit d'utiliser des outils propriétaire (Word, Adobe Reader, DocuSign, Eversign, Yousign etc.), soit d'aller chez une Autorité de Certification (AC), qui sont complexes et coûteux pour les utilisateurs et surtout à ceux qui débutent en développement des applications et en sécurité informatique. Et encore malheureusement ils sont déjà intégrés dans leurs applications complètes, donc pas des moyens de les réutiliser dans  d'autres logiciels comme des modules.\\
+		La création des signatures électronique basant sur les infrastructures à clé publiques que sa soit avec OpenSSL ou d'autres se font soit en console, soit d'utiliser des outils propriétaires tels que :
+		\begin{itemize}
+			\item Word pour Microsoft,
+			\item Adobe Reader de l'entreprise Adobe,
+			\item DocuSign,
+			\item Eversign,
+			\item Yousign,\\
+		\end{itemize}
 		
-		Les problèmes qui surviennent souvent dans les entreprises en particulier et chez les développeurs en général c'est la disposition des programmes modulaires pour intégrer facilement dans leurs plates-formes en fin de gagner en temps et en l'argent (surtout pour les entreprises). Ces nécessités nous amènent à nous poser les questions suivantes:
+		soit d'aller chez une Autorité de Certification (AC) pour générer un certificat, qui sont complexes et coûteux pour les utilisateurs et surtout à ceux qui débutent en développement des applications et en sécurité informatique. Et encore malheureusement ils sont déjà intégrés dans leurs applications complètes, donc pas des moyens de les réutiliser dans  d'autres logiciels comme des modules.\\
+		
+		Par ailleurs d'autres ne sont pas dans les systèmes d'exploitation libre(open source) comme Linux, par exemple Word de Microsoft et Adobe Reader ne fonctionnent pas sous Linux. 
+		
+		\newpage
+		
+		Les problèmes qui surviennent souvent dans les entreprises en particulier et chez les développeurs en général c'est la disposition des programmes modulaires pour intégrer facilement dans leurs plates-formes en fin de gagner en temps et en l'argent (surtout pour les entreprises). Ces nécessités nous amènent à nous poser les questions suivantes:\\
 		
 	\begin{itemize}
 		\item Comment peut-on rendre cette difficulté de signer un document de manière transparente?
 		\item Comment faciliter le développement d'un outil informatique au sein de l'entreprise ?
+		
+		\item Comment développer un module multi-plateforme ?
 	\end{itemize}
+	
+	
 	
 	\subsection{Objectifs}
 		\subsubsection{Objectif global}
-			Il sera question pour moi de développer un module des gestions des signatures basant les infrastructures à clé publique.
+			Il sera question pour moi de développer un module des gestions des signatures basant sur les infrastructures à clé publique et le rendre modulaire.
 		\subsubsection{Objectif spécifique}
 			De façon spécifique, il sera question pour moi de gérer les problèmes spécifiques liés aux :
 			\begin{itemize}
-				\item Création d'une signature d'un document numérique (texte, son, vidéo, PDF, etc.) en se basant sur les infrastructures à clé publique ou PKI,
-				\item automatisation de la création des la signature à la main et autres,
+				\item Création d'une signature des documents numériques (texte, son, vidéo, PDF, etc.) en se basant sur les infrastructures à clé publique ou PKI,
+				\item automatisation de la création des la signature à la main,
 				\item vérification de la signature de document numérique,
 				\item prouver l'authenticité d'un signataire,
 				\item faciliter à l'entreprise lors d'un besoin d'un module de signature électronique,
-				\item rendre la vie facile au développeur qui ne maîtrise pas forcément  la notion de cryptographie qui se cache derrière la signature numérique, d'intégrer ce module dans sa plate-forme.
-				%\item 
-			\end{itemize}
 			
-	%\newpage
+				\item rendre la vie facile au développeur qui ne maîtrise pas forcément  la notion de cryptographie qui se cache derrière la signature numérique, d'intégrer ce module dans sa plate-forme.\\
+				%\item  
+			\end{itemize}
+			Ainsi les utilisateur avertis pourront juste l'importer dans leurs programmes et l'utilisé facilement. Tout ce qu'un utilisateur doit connaître c'est le nom de la méthode qu'il veut appeler avec sa signature (les paramètres de la méthode) et la méthode retournera le résultat voulu. Il y'aura une commande d'aide si l'utilisateur ne connais pas le nom de la méthode  avec sa signature(paramètre) et une manuelle bien documenté avec des exemples d'utilisations.	
+				%\subsection{Les outils nécessaires}
+			
 	
 	%\begin{minipage}{\textwidth}
 		\subsubsection*{Environnement}
 		
 		 
 		    L’environnement dans lequel nous nous trouvons est favorable au projet puisqu’un
-tel système existe certes mais sous une licence payante non modulable. Sa mise en œuvre sera une innovation importante dans l’évolution numérique au sein de l'entreprise.
+tel système existe certes mais sous une licence payante  et non modulable. Sa mise en œuvre sera une innovation importante dans l’évolution numérique au sein de l'entreprise.
 	%\end{minipage}
-
+\newpage
 \section{Description des besoins}
 
 	\subsection{Spécifications fonctionnelles}
 	
-	Notre module des signatures électronique aura comme spécification fonctionnelle :
+	Notre module de signature électronique aura comme spécification fonctionnelle :
 	
 	\begin{itemize}
-		\item générer des paires de clés(publique et privée),
+		\item générer des paires de clés(publique et privée) ,
+		\item générer un certificat (auto-signé, puisque le signé est payant)
 		\item signer un document numérique à l'aide de la clé privée,
 		\item vérifier la signature d'un document numérique à l'aide de la clé publique,
 		\item chiffrer/déchiffrer un document,
-		\item générer un hash d'un document.
+		\item générer un Hash d'un document.\\
 	\end{itemize}
+	
+	\textbf{Explication de chaque fonctionnalité : } au préalable on import d'abord le module dans notre programme:\\
+	
+		\begin{enumerate}
+			\item pour générer une paire de clé rien de plus compliqué on suppose que le nom de la fonction s'appelle genererPaireKey(algo, taille) et prend en paramètre l'algorithme (RSA par exemple) et la taille de clé (2048 bits par exemple), la commande finale sera \textbf{ genererPaireKey(RSA, 2048)}, ainsi la méthode nous retournera une paire de clé RSA de taille 2048 bits (ex. OpenSSL). On pourra aller plus loin en protégeant la clé avec un algorithme symétrique, ça veut dire que les paramètres augmenteront et deviendra\textbf{ genererPaireKey(algoAsym, algoSym, taille)} dont la commande finale sera \textbf{genererPaireKey(RSA, 3DES, 2048)}, du coup après la validation on demandera d'entré un mot de passe deux fois de suite. Ainsi on se retrouvera avec un système complet et sécurisé.
+			
+			\item la génération du certificat par une autorité de certification(AC) doit respecter la spécification de la norme x.509, on aura les paramètres obligatoires suivants:
+			\begin{itemize}
+				\item Country Name (ex. CM),
+				\item Locality Name (ex. YAOUNDÉ),
+				\item Organizational Unit Name (ex. ITS ),
+				\item Common Name (ex. CRYPTO),
+				\item  Email Address (ex. its@gmail.com)
+			\end{itemize}
+			
+			\item la signature d'un document à besoin de plusieurs paramètres(fichier ou document ,clé privée et clé publique ,certificat, le Hash du fichier ) dans deux scénarios:\\
+		
+			
+			\textbf{Expéditeur : Signature}	\\
+			\begin{itemize}
+				\item Condensation du contenu : on hache le fichier avec une fonction de hachage (ex. SHA256) et on obtiendra un condensé de 63 bits quelque soit la taille du document,
+				\item On crypte le résultat précédente avec un algorithme asymétrique en utilisant la clé secrète,
+				\item En suite on associe un certificat délivré par une autorité de certification,
+				\item  En fin on attache au contenu et on envoi au destinateur.\\
+			\end{itemize}
+			
+			\textbf{Destinateur : Vérification}\\
+			\begin{itemize}
+				\item Condensation du contenu : on hache le fichier avec une fonction de hachage (ex. SHA256) et on obtiendra un condensé de 63 bits quelque soit la taille du document. \emph{\textbf{Attention}} on utilisera la même fonction de hachage(SHA256) sinon la vérification est sera fichu à l'avance,
+				\item Décryptage de la signature en utilisant la clé publique de l'expéditeur. \emph{\textbf{Attention}} : si le décryptage est échoué la vérification n'aura lieu puisqu'il y'aurai un problème d'intégrité,
+				\item Comparaison des deux Hash : Si les deux Hash sont identiques, la signature est valide, sinon l'intégrité est bafoué.\\
+				
+			\end{itemize}
+		\end{enumerate}
 		
 	\subsection{Spécifications non-fonctionnelles}
 	Comme spécification non-fonctionnelle, nous aurons :
 	\begin{itemize}
 		\item authentification : le fait de s'assurer que l'expéditeur est bien celui qu'il prétend être,
 		\item intégrité : le fait de s'assurer que l'information ne subisse aucune altération ou destruction volontaire ou accidentelle, et conserve le format initial,
-		\item le module doit être ergonomique,
+		\item prouver l'identité de l'expéditeur grâce au certificat délivré à l'expéditeur par une AC,
+		\item la confidentialité est le faite que seul l'expéditeur et destinataire ont connaissance du secret partagé entre eux,
+		%\item le module doit être ergonomique,
 		\item fonctionne 24 heure sur 24, 7 jours sur 7.
 	\end{itemize}
 
-%\section{Enveloppe budgétaire}
+\section{Enveloppe budgétaire}
+Pour réaliser ce projet on a besoin des outils suivants:
+	\begin{itemize}
+		\item d'un ordinateur avec un système d'exploitation (Linux, Microsoft, ou Mac OS) mais dans ce cas on privilégie l'open source(Linux),
+		\item un environnement de développement, PyCharm (libre),
+		\item une connexion illimité,
+		\item lieu de travail ou une poste adapter à un développeur,
+		
+	\end{itemize}	 
 
 \section{Délai}
 	J'estime que ce module pourra me prendre 1 à 2 mois.
