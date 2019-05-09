@@ -1,0 +1,61 @@
+\babel@toc {english}{}
+\babel@toc {french}{}
+\babel@toc {english}{}
+\babel@toc {french}{}
+\contentsline {section}{Introduction}{1}{chapter*.7}
+\contentsline {part}{I\hspace {1em}Pr\IeC {\'e}sentation g\IeC {\'e}n\IeC {\'e}rale}{2}{part.1}
+\contentsline {chapter}{\numberline {1}Contexte et probl\IeC {\'e}matique}{3}{chapter.1}
+\contentsline {section}{Introduction}{3}{section*.9}
+\contentsline {section}{\numberline {1.1}Pr\IeC {\'e}sentation de l'entreprise}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Historique}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Organisation g\IeC {\'e}n\IeC {\'e}rale}{3}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Missions}{3}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Services et Produits}{4}{subsection.1.1.4}
+\contentsline {subsubsection}{S\IeC {\'e}vices}{4}{section*.11}
+\contentsline {subsubsection}{E-Services}{5}{section*.12}
+\contentsline {subsubsection}{Formations}{5}{section*.13}
+\contentsline {subsubsection}{Certifications}{6}{section*.14}
+\contentsline {subsubsection}{Produits}{6}{section*.15}
+\contentsline {subsection}{\numberline {1.1.5}Cadre de stage}{7}{subsection.1.1.5}
+\contentsline {subsubsection}{Situation g\IeC {\'e}ographique}{7}{section*.16}
+\contentsline {section}{\numberline {1.2}Contexte}{8}{section.1.2}
+\contentsline {section}{\numberline {1.3}Probl\IeC {\'e}matique}{8}{section.1.3}
+\contentsline {section}{\numberline {1.4}Objectifs}{8}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Objectif g\IeC {\'e}n\IeC {\'e}ral}{8}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Objectif sp\IeC {\'e}cifique}{9}{subsection.1.4.2}
+\contentsline {section}{\numberline {1.5}M\IeC {\'e}thodologie}{9}{section.1.5}
+\contentsline {chapter}{\numberline {2}G\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s sur la signature \IeC {\'e}lectronique et PKI }{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}G\IeC {\'e}n\IeC {\'e}ralit\IeC {\'e}s sur la signature \IeC {\'e}lectronique}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Signature \IeC {\'e}lectronique}{11}{subsection.2.1.1}
+\contentsline {subsubsection}{D\IeC {\'e}finitions}{11}{section*.20}
+\contentsline {subsubsection}{R\IeC {\^o}le de signature \IeC {\'e}lectronique}{11}{section*.21}
+\contentsline {section}{\numberline {2.2}Cryptographie}{11}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Cryptographie sym\IeC {\'e}trique}{11}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Cryptographie asym\IeC {\'e}trique}{11}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Infrastructure \IeC {\`a} cl\IeC {\'e} publique}{11}{section.2.3}
+\contentsline {part}{II\hspace {1em}Conception, analyse et impl\IeC {\'e}mentation}{12}{part.2}
+\contentsline {chapter}{\numberline {3}Analyse, Conception et d\IeC {\'e}ploiement du module}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Choix du cycle de d\IeC {\'e}veloppement}{13}{section.3.1}
+\contentsline {subsubsection}{Pourquoi cycle en V ?}{14}{section*.25}
+\contentsline {section}{\numberline {3.2}Orientation et faisabilit\IeC {\'e}}{15}{section.3.2}
+\contentsline {section}{\numberline {3.3}Analyse de besoins }{16}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Cahier de charge}{16}{subsection.3.3.1}
+\contentsline {subsubsection}{Besoins fonctionnels}{16}{section*.26}
+\contentsline {subsubsection}{Besoins non fonctionnels}{17}{section*.27}
+\contentsline {section}{\numberline {3.4} Budg\IeC {\'e}tisation}{17}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conception architecturale}{17}{section.3.5}
+\contentsline {section}{\numberline {3.6}Conception d\IeC {\'e}taill\IeC {\'e}e}{18}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Pr\IeC {\'e}sentation de langage UML}{18}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Mod\IeC {\'e}lisation avec le langage UML}{20}{subsection.3.6.2}
+\contentsline {subsubsection}{Diagramme de cas d'utilisation}{20}{section*.30}
+\contentsline {subsubsection}{Description textuelle}{24}{section*.35}
+\contentsline {subsubsection}{Diagramme de classes}{30}{section*.42}
+\contentsline {subsubsection}{Diagramme de packages}{31}{section*.44}
+\contentsline {subsubsection}{Diagramme de s\IeC {\'e}quences}{32}{section*.46}
+\contentsline {subsubsection}{Diagramme de d\IeC {\'e}ploiement}{38}{section*.53}
+\contentsline {subsubsection}{Processus d'acquisition de certificat}{39}{section*.55}
+\contentsline {section}{\numberline {3.7}Codage}{39}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Environnement de d\IeC {\'e}veloppement}{39}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}D\IeC {\'e}veloppement du module}{39}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}D\IeC {\'e}veloppement de l'interface utilisateur}{39}{subsection.3.7.3}
+\contentsline {section}{Conclusion}{40}{section*.56}
