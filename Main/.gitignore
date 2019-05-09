@@ -1,14 +1,30 @@
+# LaTeX temporary files
+*.aux
+*.log
+*.toc
 
-# Created by https://www.gitignore.io/api/latex
-# Edit at https://www.gitignore.io/?templates=latex
+# PDF output - usually a bad idea to keep this in Git
+*.pdf
 
-### LaTeX ###
-## Core latex/pdflatex auxiliary files:
-/Main/*
-# Sauf
+# Latexmk
+*.fdb_latexmk
 
-!*.tex
-!*.pdf
-!*.bib
+# SyncTeX
+*.synctex.gz
 
-# End of https://www.gitignore.io/api/latex
+# LaTeX Beamer
+*.snm
+*.vrb
+*.nav
+*.out
+
+# BibTeX
+*.bbl
+*.blg
+
+# Log created by Adobe Reader
+C:\\nppdf32Log\\debuglog.txt
+
+# Sublime Text Project Files (usually contain absolute paths)
+*.sublime-project
+*.sublime-workspace
