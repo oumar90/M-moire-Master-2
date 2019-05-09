@@ -8,7 +8,17 @@
 \usepackage{graphicx}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage[hidelinks]{hyperref}
-
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{float} 
+ 
+\usepackage{titlesec}%controler la taille du titre 
+\titleformat{\chapter}[display] %titre du chapitre
+	{\normalfont\fontsize{30pt}{0}\bfseries}
+	{\chaptertitlename\thechapter}{14pt}{}
+\titleformat{\section} % controle de section
+	{\normalfont\fontsize{14pt}{0}\bfseries}
+	{\thesection}{6pt}{} % espace entre le numéro et le titre
 
 \begin{document}
 
@@ -19,7 +29,9 @@
 }
 
 %\vspace*{3cm}
-\author{Oumar Djimé RATOU}
+\author{Oumar Djimé RATOU\\
+{\small \href{mailto:oudjira90@yahoo.com}{oudjira90@yahoo.com}}}
+ 
 
 \maketitle
 
@@ -28,7 +40,16 @@
 \tableofcontents
 \newpage
 
+%**************
+\listoffigures
+%*************
+\newpage
+%----------------
+\listoftables
+%------------------
+\newpage
 %\begin{flushleft}
+
 
 \section{Description et compréhension du projet}
 
@@ -177,6 +198,319 @@ Pour réaliser ce projet on a besoin des outils suivants:
 
 \section{Délai}
 	J'estime que ce module pourra me prendre 1 à 2 mois.
+	
+	
+	
+	\newpage
+\section{Conception}
+	\subsection{Outils et méthodes utilisés}
+		\textbf{Outils :}
+		
+			\begin{itemize}
+				\item Umbrello,
+				\item PyCharm,
+				\item Sublime Text,
+				\item LAMP(Apache + Mysql + PHP),
+				\item Flask.\\
+			\end{itemize}
+			
+		\textbf{Langage de programmation :}\\
+		
+			\begin{itemize}
+				\item Python,
+				\item HTML, CSS,
+				\item Jinja2.\\
+			\end{itemize}
+			
+		\textbf{Méthode :}\\
+		
+			\begin{itemize}
+				\item UML,
+				\item UP7.
+			\end{itemize}
+			
+		\subsection{ Acteurs du système}
+		
+			\textbf{Acteurs primaires :}\\
+			
+				\begin{itemize}
+					\item Administrateur,
+					\item Utilisateurs,
+					\item Système externe.\\
+				\end{itemize}					
+		\newpage
+	\subsection{Diagramme de cas d'utilisation}	
+		\textbf{Diagramme de cas d'utilisation général  : }\\
+			\begin{figure}[H]
+					\centering		
+					\includegraphics[width=18cm, height=9cm]{../Diagrammes/DiagrammeDeCasDutilisation/diagrammeGeneral.png} 
+					\caption{Diagramme de cas d'utilisation général}
+					\label{fig2}
+			\end{figure}
+			
+		\textbf{Diagramme de cas d'utilisation de l'Administrateur :}
+			\begin{figure}[H]
+					\centering		
+					\includegraphics[width=18cm, height=8cm]{../Diagrammes/DiagrammeDeCasDutilisation/admin.png}  
+					\caption{Diagramme de cas d'utilisation d'administrateur}
+					\label{fig3}
+			\end{figure}
+		
+		\textbf{Diagramme de cas d'utilisation de l'utilisateur :}
+			\begin{figure}[H]
+					\centering		
+					\includegraphics[width=18cm, height=8cm]{../Diagrammes/DiagrammeDeCasDutilisation/users.png}  
+					\caption{Diagramme de cas d'utilisation d'utilisateur}
+					\label{fig4}
+			\end{figure}
+			
+			
+	
+			\textbf{Diagramme de cas d'utilisation de système externe :}
+			\begin{figure}[H]
+					\centering		
+					\includegraphics[width=18cm, height=8cm]{../Diagrammes/DiagrammeDeCasDutilisation/systemeexterne.png}  
+					\caption{Diagramme de cas d'utilisation de système externe}
+					\label{fig5}
+			\end{figure}
+			
+	
+			\subsubsection{Description textuelle de cas d'utilisation : S'authentifier}
+			
+			\begin{table}[H]
+			
+				\centering
+					\caption{Description contextuelle de cas d'utilisation s'authentifier}
+				\begin{tabular}{|l|p{11cm}|}
+					\hline 
+						\textbf{Titre} & S'authentifier \\ 
+					\hline 
+						\textbf{Résumé} & Ce cas d'utilisation permet d'accéder au tableau de bord de l'utilisateur \\ 
+					\hline 
+						\textbf{Acteur} & Administrateur, utilisateur \\  
+				
+					\hline 
+						\textbf{Pré-condition} & l'application doit être lancer(page d'accueil) \\ 
+					\hline 
+						\multirow{2}{*}{\textbf{Scenario nominal}} & 1) l'utilisateur fait une demande l'accès au système en cliquant sur le bouton connexion, \\
+							 & 2) le système lui renvoi le formulaire de connexion \\
+							 & 3) l'utilisateur introduit son username et password \\
+							 & 4) le système vérifie que  sont username et password corrects \\
+							 & 5) le système ouvre une session de l'utilisateur \\
+					\hline 
+					
+						\multirow{2}{*}{\textbf{Enchaînement Alternatif}} & le username et le password sont corrects., \\
+							  & l'enchaînement commence au point 3 du scénario nominal. \\
+							 & le message affiche un message d'erreur, aller au point 2. \\
+					\hline 
+						\textbf{Enchaînement d'Erreur} & E1 : Si l'étape 2 de scenario nominal n'est pas vérifié un message d'erreur sera affiché. \\
+					\hline
+						\textbf{Post condition} & ouverture d'une session, accès au compte\\
+					\hline
+				
+			\end{tabular} 
+			
+		\end{table}
+		
+		
+		
+		\subsubsection{Description textuelle de cas d'utilisation : Générer certificat}
+		
+			\begin{table}[H]
+			
+				\centering
+					\caption{Description contextuelle de cas d'utilisation générer certificat}
+				\begin{tabular}{|l|p{11cm}|}
+					\hline 
+						\textbf{Titre} & Générer Certificat \\ 
+					\hline 
+						\textbf{Résumé} & Ce cas d'utilisation permet de générer des certificats aux utilisateurs \\ 
+					\hline 
+						\textbf{Acteur} & Autorité de certification Administrateur, Système externe \\  
+				
+					\hline 
+						\textbf{Pré-condition} & l'application doit être lancer (page d'accueil) \\ 
+					\hline 
+						\multirow{2}{*}{\textbf{Scenario nominal}} & 1) un AC peut générer un certificat en cliquant sur le bouton genererCertifcat, \\
+							 & 2) le système lui renvoi le formulaire à remplir \\
+							 & 3) on introduit la clé publique de l'utilisateur \\
+							 & 4) on renseigne le nom et le prénom de l'utilisateur \\
+							 & 5) la date de validité (début et fin)\\
+							 & 6) numéro de version\\
+							 &7) numéro de série. \\
+					\hline 
+					
+						\multirow{2}{*}{\textbf{Enchaînement Alternatif}} & la clé publique n'est pas corrects. \\
+							  & l'enchaînement commence au point 2 du scénario nominal. \\
+							
+					\hline 
+						\textbf{Enchaînement d'Erreur} & E1 : Si l'étape 2 de scenario nominal n'est pas vérifié un message d'erreur sera affiché. \\
+					\hline
+						\textbf{Post condition} & création de certificat avec succès.\\
+					\hline
+				
+			\end{tabular} 
+			
+		\end{table}
+	
+		
+	\subsubsection{Description textuelle de cas d'utilisation : Générer Paire de Clé}
+	
+				\begin{table}[H]
+			
+				\centering
+					\caption{Description contextuelle de cas d'utilisation générer paire de clé}
+				\begin{tabular}{|l|p{11cm}|}
+					\hline 
+						\textbf{Titre} & Générer Paire de clé \\ 
+					\hline 
+						\textbf{Résumé} & Ce cas d'utilisation permet de générer des paires de clé aux utilisateurs \\ 
+					\hline 
+						\textbf{Acteur} & Autorité de certification, Administrateur, Système externe, Utilisateur \\  
+					\hline 
+						\textbf{Pré-condition} & l'application doit être lancer (page d'accueil) et l'utilisateur est authentifié \\ 
+					\hline 
+						\multirow{2}{*}{\textbf{Scenario nominal}} & 1) un utilisateur peut générer une paire en cliquant sur le bouton genererPaireKey, \\
+							 & 2) le système lui renvoi le formulaire à remplir \\
+							 & 3) il introduit le cryptosystème à utiliser (ex. RSA) \\
+							 & 4) ensuite il introduit la taille de clé (ex.4096) \\
+							 & 5) il valide en cliquant sur le bouton générer \\
+					\hline 
+					
+						\multirow{2}{*}{\textbf{Enchaînement Alternatif}} & l'algorithme ou la taille de clé est incorrect. \\
+							  & l'enchaînement commence au point 2 du scénario nominal. \\
+							
+					\hline 
+						\textbf{Enchaînement d'Erreur} & E1 : Si l'étape 3 de scenario nominal est incorrect, un message d'erreur sera affiché. \\
+						& Si l'étape 4 de scenario nominal est incorrect, un message d'erreur sera affiché. \\
+					\hline
+						\textbf{Post condition} & génération de paire de clé avec succès.\\
+					\hline
+				
+			\end{tabular} 
+			
+		\end{table}
+		
+	\subsubsection{Description textuelle de cas d'utilisation : Signer document}
+
+				\begin{table}[H]
+			
+				\centering
+					\caption{Description contextuelle de cas d'utilisation Signer document}
+				\begin{tabular}{|l|p{11cm}|}
+					\hline 
+						\textbf{Titre} & Signer document \\ 
+					\hline 
+						\textbf{Résumé} & Ce cas d'utilisation permet aux utilisateurs de signer leurs documents \\ 
+					\hline 
+						\textbf{Acteur} & Autorité de certification, Administrateur, Système externe, Utilisateur \\ 
+					\hline 
+						\textbf{Pré-condition} & l'application doit être lancer (page d'accueil) et l'utilisateur est authentifié \\ 
+					\hline 
+						\multirow{2}{*}{\textbf{Scenario nominal}} & 1) un utilisateur peut signer son document en cliquant simplément sur le bouton Signer document, \\
+							 & 2) le système lui renvoi le formulaire à remplir \\
+							 & 3) il téléverse son fichier(txt, docs, pdf,etc) \\
+							 & 4) ensuite il téléverse sa clé publique\\
+							 & 5) il sélectionne la fonction de hachage (ex. SHA1, SHA256 ...)\\
+							 & 6) il valide en cliquant sur le bouton Signer document \\
+					\hline 
+					
+						\multirow{2}{*}{\textbf{Enchaînement Alternatif}} & l'algorithme est incorrect. \\
+							  & l'enchaînement commence au point 2 du scénario nominal. \\
+							
+					\hline 
+						\textbf{Enchaînement d'Erreur} & E1 : Si l'étape 3 de scenario nominal est incorrect, un message d'erreur sera affiché. \\
+						& Si l'étape 4 de scenario nominal est incorrect, un message d'erreur sera affiché. \\
+					\hline
+						\textbf{Post condition} & La signature est effectuée avec succès.\\
+					\hline
+			\end{tabular} 
+		\end{table}
+	
+	\subsubsection{Description textuelle de cas d'utilisation : Créer Compte}
+
+			\begin{table}[H]
+				\centering
+					\caption{Description contextuelle de cas d'utilisation Créer Compte}
+				\begin{tabular}{|l|p{11cm}|}
+					\hline 
+						\textbf{Titre} & Créer Compte \\ 
+					\hline 
+						\textbf{Résumé} & Ce cas d'utilisation permet aux utilisateurs de crées leurs comptent \\ 
+					\hline 
+						\textbf{Acteur} & Administrateur, Utilisateur \\ 
+			
+					\hline 
+						\textbf{Pré-condition} & l'application doit être lancer (page d'accueil)  \\ 
+					\hline 
+						\multirow{2}{*}{\textbf{Scenario nominal}} & 1) l'utilisateur peut créer un compte en cliquant sur le bouton \textbf{créer un compte} \\
+							 & 2) le système lui renvoi le formulaire à remplir \\
+							 & 3) il entre son nom, prénom, mot de passe, E-mail \\
+							 & 4) et il valide en cliquant sur le bouton créer\\
+					\hline 
+					
+						\multirow{2}{*}{\textbf{Enchaînement Alternatif}} & l'adresse E-mail est incorrect. \\
+							  & l'enchaînement commence au point 2 du scénario nominal. \\
+							
+					\hline 
+						\textbf{Enchaînement d'Erreur} & E1 : Si l'étape 3 de scenario nominal est incorrect, un message d'erreur sera affiché. \\
+					\hline
+						\textbf{Post condition} & Le compte est crée avec succès.\\
+					\hline	
+			\end{tabular} 
+		\end{table}
+	
+	
+	\subsubsection{Description textuelle de cas d'utilisation : Envoyer Document}
+
+				\begin{table}[H]
+				\centering
+					\caption{Description contextuelle de cas d'utilisation Envoyer Document}
+				\begin{tabular}{|l|p{11cm}|}
+					\hline 
+						\textbf{Titre} & Envoyer Document \\ 
+					\hline 
+						\textbf{Résumé} & Ce cas d'utilisation permet aux utilisateurs d'envoyer leurs document signer \\ 
+					\hline 
+						\textbf{Acteur} & Administrateur, Utilisateur \\ 
+			
+					\hline 
+						\textbf{Pré-condition} & l'application doit être lancer (page d'accueil) et l'utilisateur est authentifié  \\ 
+					\hline 
+						\multirow{2}{*}{\textbf{Scenario nominal}} & 1) un utilisateur peut envoyer un document en cliquant sur l'onglet message \textbf{Envoyer document} \\
+							 & 2) le système lui renvoi le formulaire à remplir \\
+							 & 3) il téléverse son document \\
+							 & 4) il téléverse son certificat\\
+							 & 5) ensuite il choisit un destinateur\\
+							 & 6) enfin il valide en cliquant sur le bouton \textbf{Envoyer}.\\
+					\hline 
+					
+						\multirow{2}{*}{\textbf{Enchaînement Alternatif}} & l'adresse E-mail est incorrect. \\
+							  & l'enchaînement commence au point 2 du scénario nominal. \\
+							
+					\hline 
+						\textbf{Enchaînement d'Erreur} & E1 : Si l'étape 5 de scenario nominal est incorrect, un message d'erreur sera affiché. \\
+					\hline
+						\textbf{Post condition} & L'envoi est effectué avec succès.\\
+					\hline
+			\end{tabular} 
+		\end{table} 
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	 
+	
+	
+	
+	
+	
+	
 
 %\end{flushleft}
 \end{document}

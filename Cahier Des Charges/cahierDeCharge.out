@@ -9,3 +9,13 @@
 \BOOKMARK [2][-]{subsection.3.2}{Sp\351cifications non-fonctionnelles}{section.3}% 9
 \BOOKMARK [1][-]{section.4}{Enveloppe budg\351taire}{}% 10
 \BOOKMARK [1][-]{section.5}{D\351lai}{}% 11
+\BOOKMARK [1][-]{section.6}{Conception}{}% 12
+\BOOKMARK [2][-]{subsection.6.1}{Outils et m\351thodes utilis\351s}{section.6}% 13
+\BOOKMARK [2][-]{subsection.6.2}{ Acteurs du syst\350me}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.3}{Diagramme de cas d'utilisation}{section.6}% 15
+\BOOKMARK [3][-]{subsubsection.6.3.1}{Description textuelle de cas d'utilisation : S'authentifier}{subsection.6.3}% 16
+\BOOKMARK [3][-]{subsubsection.6.3.2}{Description textuelle de cas d'utilisation : G\351n\351rer certificat}{subsection.6.3}% 17
+\BOOKMARK [3][-]{subsubsection.6.3.3}{Description textuelle de cas d'utilisation : G\351n\351rer Paire de Cl\351}{subsection.6.3}% 18
+\BOOKMARK [3][-]{subsubsection.6.3.4}{Description textuelle de cas d'utilisation : Signer document}{subsection.6.3}% 19
+\BOOKMARK [3][-]{subsubsection.6.3.5}{Description textuelle de cas d'utilisation : Cr\351er Compte}{subsection.6.3}% 20
+\BOOKMARK [3][-]{subsubsection.6.3.6}{Description textuelle de cas d'utilisation : Envoyer Document}{subsection.6.3}% 21
