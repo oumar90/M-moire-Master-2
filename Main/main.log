@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.22)  9 MAY 2019 10:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.22)  9 MAY 2019 11:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2056,16 +2056,16 @@ Overfull \hbox (28.44923pt too wide) in paragraph at lines 448--449
 File: ../Diagrammes/DigrammeClass/diagrammepackage.png Graphic file (type png)
 <use ../Diagrammes/DigrammeClass/diagrammepackage.png>
 Package pdftex.def Info: ../Diagrammes/DigrammeClass/diagrammepackage.png  used
- on input line 458.
+ on input line 460.
 (pdftex.def)             Requested size: 512.19295pt x 369.90369pt.
 
-Overfull \hbox (28.49608pt too wide) in paragraph at lines 458--459
+Overfull \hbox (28.49608pt too wide) in paragraph at lines 460--461
  [][] 
  []
 
 [31 <../Diagrammes/DigrammeClass/ClassDiagram.png>]
 
-LaTeX Warning: Citation `tatiana' on page 32 undefined on input line 464.
+LaTeX Warning: Citation `tatiana' on page 32 undefined on input line 466.
 
 <../Diagrammes/DiagrammeSequences/authentifiers.png, id=551, 1204.5pt x 819.06p
 t>
@@ -2073,7 +2073,7 @@ File: ../Diagrammes/DiagrammeSequences/authentifiers.png Graphic file (type png
 )
 <use ../Diagrammes/DiagrammeSequences/authentifiers.png>
 Package pdftex.def Info: ../Diagrammes/DiagrammeSequences/authentifiers.png  us
-ed on input line 469.
+ed on input line 471.
 (pdftex.def)             Requested size: 483.7029pt x 312.98323pt.
 [32 <../Diagrammes/DigrammeClass/diagrammepackage.png>]
 <../Diagrammes/DiagrammeSequences/generatekeys.png, id=561, 1120.9378pt x 624.8
@@ -2082,10 +2082,10 @@ File: ../Diagrammes/DiagrammeSequences/generatekeys.png Graphic file (type png)
 
 <use ../Diagrammes/DiagrammeSequences/generatekeys.png>
 Package pdftex.def Info: ../Diagrammes/DiagrammeSequences/generatekeys.png  use
-d on input line 477.
+d on input line 479.
 (pdftex.def)             Requested size: 512.16551pt x 369.88853pt.
 
-Overfull \hbox (28.46864pt too wide) in paragraph at lines 477--478
+Overfull \hbox (28.46864pt too wide) in paragraph at lines 479--480
  [][] 
  []
 
@@ -2096,10 +2096,10 @@ File: ../Diagrammes/DiagrammeSequences/GenerateCertificat.png Graphic file (typ
 e png)
 <use ../Diagrammes/DiagrammeSequences/GenerateCertificat.png>
 Package pdftex.def Info: ../Diagrammes/DiagrammeSequences/GenerateCertificat.pn
-g  used on input line 485.
+g  used on input line 487.
 (pdftex.def)             Requested size: 512.15085pt x 369.8948pt.
 
-Overfull \hbox (28.45398pt too wide) in paragraph at lines 485--486
+Overfull \hbox (28.45398pt too wide) in paragraph at lines 487--488
  [][] 
  []
 
@@ -2110,10 +2110,10 @@ File: ../Diagrammes/DiagrammeSequences/signerdocument.png Graphic file (type pn
 g)
 <use ../Diagrammes/DiagrammeSequences/signerdocument.png>
 Package pdftex.def Info: ../Diagrammes/DiagrammeSequences/signerdocument.png  u
-sed on input line 493.
+sed on input line 495.
 (pdftex.def)             Requested size: 512.15018pt x 369.88618pt.
 
-Overfull \hbox (28.45331pt too wide) in paragraph at lines 493--494
+Overfull \hbox (28.45331pt too wide) in paragraph at lines 495--496
  [][] 
  []
 
@@ -2124,10 +2124,10 @@ File: ../Diagrammes/DiagrammeSequences/chiffrerDechiffrer.png Graphic file (typ
 e png)
 <use ../Diagrammes/DiagrammeSequences/chiffrerDechiffrer.png>
 Package pdftex.def Info: ../Diagrammes/DiagrammeSequences/chiffrerDechiffrer.pn
-g  used on input line 501.
+g  used on input line 503.
 (pdftex.def)             Requested size: 512.15034pt x 369.89684pt.
 
-Overfull \hbox (28.45348pt too wide) in paragraph at lines 501--502
+Overfull \hbox (28.45348pt too wide) in paragraph at lines 503--504
  [][] 
  []
 
@@ -2138,24 +2138,27 @@ File: ../Diagrammes/DiagrammeSequences/EnvoyerDocument.png Graphic file (type p
 ng)
 <use ../Diagrammes/DiagrammeSequences/EnvoyerDocument.png>
 Package pdftex.def Info: ../Diagrammes/DiagrammeSequences/EnvoyerDocument.png  
-used on input line 510.
+used on input line 512.
 (pdftex.def)             Requested size: 512.1427pt x 369.90056pt.
 
-Overfull \hbox (28.44583pt too wide) in paragraph at lines 510--511
+Overfull \hbox (28.44583pt too wide) in paragraph at lines 512--513
  [][] 
  []
 
 [37 <../Diagrammes/DiagrammeSequences/chiffrerDechiffrer.png>]
+
+LaTeX Warning: Citation `deplymentid' on page 38 undefined on input line 522.
+
 <../Diagrammes/DiagrammeSequences/diagrammedeploy.png, id=601, 1204.5pt x 602.2
 5pt>
 File: ../Diagrammes/DiagrammeSequences/diagrammedeploy.png Graphic file (type p
 ng)
 <use ../Diagrammes/DiagrammeSequences/diagrammedeploy.png>
 Package pdftex.def Info: ../Diagrammes/DiagrammeSequences/diagrammedeploy.png  
-used on input line 523.
+used on input line 526.
 (pdftex.def)             Requested size: 483.7029pt x 312.988pt.
- [38 <../Diagrammes/DiagrammeSequences/EnvoyerDocument.png>]) [39 <../Diagramme
-s/DiagrammeSequences/diagrammedeploy.png>] [40]
+[38 <../Diagrammes/DiagrammeSequences/EnvoyerDocument.png>]) [39 <../Diagrammes
+/DiagrammeSequences/diagrammedeploy.png>] [40]
 No file main.bbl.
 
 AED: lastpage setting LastPage
@@ -2177,10 +2180,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 292.
  ) 
 Here is how much of TeX's memory you used:
- 35876 strings out of 492982
- 666496 string characters out of 6134896
+ 35877 strings out of 492982
+ 666509 string characters out of 6134896
  885991 words of memory out of 5000000
- 38647 multiletter control sequences out of 15000+600000
+ 38648 multiletter control sequences out of 15000+600000
  548681 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,92p,10478b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2207,7 +2210,7 @@ per/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></u
 sr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts
 /type1/public/cm-super/sfrm3583.pfb></usr/share/texmf/fonts/type1/public/cm-sup
 er/sfti1200.pfb>
-Output written on main.pdf (51 pages, 1982060 bytes).
+Output written on main.pdf (51 pages, 1982786 bytes).
 PDF statistics:
  718 PDF objects out of 1000 (max. 8388607)
  605 compressed objects within 7 object streams
