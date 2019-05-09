@@ -19,9 +19,9 @@
 %chargement du package fancy propre aux entête et au pieds de pag
 \usepackage{fancyhdr}
 \parindent=0cm
-%\usepackage{array}%c'est un packet permettant d'insérer un tableau dans un document latex
+%\usepackage{array}%c'est un packet permettant d'insérer un ta	bleau dans un document latex
 \usepackage{setspace}%commande permettant de gérer les interlines 
-\usepackage[top=3cm, bottom=3cm, left=3cm, right=3cm]{geometry} 
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry} 
 \usepackage{lastpage}
 \usepackage{tikz}%package permettant d'avoir la bordure de la prémiere de couverture
 \usetikzlibrary{calc}%package pour la bordure de couverture
@@ -29,6 +29,13 @@
 %Chargment de packages pour plusieurs types de letrines
 \usepackage{lettrine,oldgerm,yfonts}
 \usepackage{lipsum}
+\usepackage{float}
+\usepackage{xcolor}
+%Chargment de packages pour canvas de textes (bordures)
+\usepackage{tcolorbox,bclogo,environ,wrapfig}
+\usepackage{colortbl}  % pour les couleurs de fond de cellules
+\usepackage{multirow}
+\usepackage{caption}
 %fin d'importation des paquets
 %doublespacing
 %\onehalfspacing
@@ -41,7 +48,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %bloc de commande permettant de définir l'entête et le pied de page:
 \lhead{}
-\chead{\small{DÉVELOPPEMENT D'UN MODULE DE SÉCURITÉ EN SE BASANT SUR LA PKI}}
+\chead{\small{CONCEPTION ET DÉPLOIEMENT D'UN MODULE DE SIGNATURE ÉLECTRONIQUE BASÉ SUR LA PKI}}
 \rhead{}
 
 %bloc de commande permettant de définir le pied de page:
@@ -62,6 +69,7 @@
 %présentation de la prémière de couverture
 \begin{document}
 %\maketitle
+%\frontmatter pour la classe book uniquement
 
 %\selectlanguage{french}
 \begin{tikzpicture}[remember picture, overlay]
@@ -117,7 +125,7 @@
 	\vspace{0.4\drop}
 	\textbf{CRYPTOGRAPHIE ET SÉCURITÉ INFORMATIQUE}
 	\rule{.95\textwidth}{2pt}\\
-	\large{\textbf{DÉVELOPPEMENT D'UN MODULE DE SÉCURITÉ EN SE BASANT SUR LA PKI}}\\
+	\large{\textbf{CONCEPTION ET DÉPLOIEMENT D'UN MODULE DE SIGNATURE ÉLECTRONIQUE BASÉ SUR LA PKI}}\\
 	\rule{.95\textwidth}{2pt}\\%commande permettant de désigné un trait horizontal de longueur .95 et de 			largeur 2pt
 
 \end{center}
@@ -222,14 +230,16 @@
 % Mot clés
 \section*{Keyswords ou mot clé}
 
-\pagebreak
+
+\newpage
+%----------------
+\listoftables
+%------------------
+\newpage
 % Listes de tableau
-\section*{Liste des tableaux}
-
-\pagebreak
-
-% Listes de figures et illustration
-\section*{Listes de figures et illustration}
+%**************
+\listoffigures
+%*************
 
 %\pagenumbering{roman}
 \newpage 	
@@ -250,21 +260,19 @@
 
 
 % Chapitre 1 contexte et problematique
-%\include{../Chapitre1/chapiter1}
 \input{../Chapitre1/chapiter1}
 
 % Chapitre 2 
-%\input{../Chapitre2/chapitre2}
+\input{../Chapitre2/chapitre2}
 
 
 %Premier partie
-%\part{Conception et test}
+\part{Conception, analyse  et implémentation}
 
 %Chapitre 3
-%\input{../Chapitre3/chapitre3}
+\input{../Chapitre3/chapitre3}
 
-
-%Chapitre 3
+%Chapitre 4
 %\input{../Chapitre4/chapitre4}
 
 
@@ -272,11 +280,12 @@
 \newpage
 \addcontentsline{toc}{section}{Conclusion}
 \section*{Conclusion}
-%\end{flushleft}
-\newpage
+
+
+\pagebreak
 %\textbf{Ouvrages}
-%\bibliographystyle{plain}
-%\bibliography{biblnormecarte}
+\bibliographystyle{plain}
+\bibliography{biblio}
 %\addcontentsline{toc}{section}{Référence Bibliographie}
 
 			
