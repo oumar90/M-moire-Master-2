@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Debut d'importation de tous les paquets nécéssaire.
 \documentclass[12pt,a4paper]{report}
 \usepackage[utf8]{inputenc}
@@ -9,6 +9,7 @@
 \usepackage{layout}
 \usepackage[hidelinks]{hyperref}
 \usepackage{graphicx}
+%\usepackage{bmpsize}
 %\usepackage{caption} 
 \usepackage{color}
 \usepackage{enumitem} %package permettant de géner le changement des enumeration
@@ -37,6 +38,18 @@
 \usepackage{colortbl}  % pour les couleurs de fond de cellules
 \usepackage{multirow}
 \usepackage{caption}
+\usepackage{comment}
+\usepackage{csquotes}
+% ----Bibliographie-------------
+\begin{comment}
+\usepackage[
+    backend=biber,
+    style=alphabetic,
+    sorting=ynt
+]{biblatex}
+\end{comment}
+%\addbibresource{biblio.bib}
+% -------end bibliographie------
 %fin d'importation des paquets
 %doublespacing
 %\onehalfspacing
@@ -49,7 +62,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %bloc de commande permettant de définir l'entête et le pied de page:
 \lhead{}
-\chead{\small{CONCEPTION ET DÉPLOIEMENT D'UN MODULE DE SIGNATURE ÉLECTRONIQUE BASÉ SUR LA PKI}}
+%\chead{\small{CONCEPTION ET DÉPLOIEMENT D'UN MODULE DE SIGNATURE ÉLECTRONIQUE BASÉ SUR LA PKI}}
+\chead{\textit{\leftmark} }
 \rhead{}
 
 %bloc de commande permettant de définir le pied de page:
@@ -68,6 +82,7 @@
 %.\arabic{subsection}.\roman{subsubsection}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %présentation de la prémière de couverture
+%\graphicspath{{imgs/}} %char
 \begin{document}
 %\maketitle
 %\frontmatter pour la classe book uniquement
@@ -287,7 +302,10 @@
 %\textbf{Ouvrages}
 \bibliographystyle{plain}
 \bibliography{biblio}
-%\addcontentsline{toc}{section}{Référence Bibliographie}
+\addcontentsline{toc}{section}{Référence Bibliographie}
+ 
+%\medskip
+ 
+%\printbibliography
 
-			
 \end{document}
